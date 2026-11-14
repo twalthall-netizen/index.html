@@ -27,7 +27,7 @@
             margin: 0 auto;
         }
 
-        /* Top Greeting (Replaced duplicate h1 to maintain single h1 hierarchy) */
+        /* Top Greeting (Maintains single h1 hierarchy on page) */
         .top-greeting {
             color: #2c3e50;
             font-size: 2rem;
@@ -38,7 +38,7 @@
         /* High-Contrast Utility Class (Passing WCAG AA 4.5:1+) */
         .color-choice {
             font-weight: bold;
-            color:  #5B005B;
+            color: #5B005B;
             font-size: 18px;
             margin-bottom: 12px;
         }
@@ -92,16 +92,17 @@
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #cccccc;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
- .card h2,
-.card h3 {
-    font-size: 1.4rem;
-    color: #1a252f;
-    margin-bottom: 8px;
-    footer {
-	fontsize:16px;
-}
+
+        .card h2,
+        .card h3 {
+            font-size: 1.4rem;
+            color: #1a252f;
+            margin-bottom: 8px;
+        }
+
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 6px;
@@ -115,6 +116,7 @@
             color: #111111;
             border-radius: 8px;
             text-align: center;
+            font-size: 16px;
         }
 
         footer a {
@@ -146,14 +148,14 @@
                 grid-column: span 3;
             }
         }
-    </style> 
+    </style>
 </head>
 
 <body>
 
 <div class="page-container">
 
-    <p class="top-greeting"<h1>Hello, World!</h1>
+    <p class="top-greeting">Hello, World!</p>
     <p class="color-choice">This is my very first web page in Web Development (B)</p>
 
     <!-- Header with Flexbox Navigation -->
@@ -206,14 +208,14 @@
 
         <!-- Card 4 (Spans full width on larger viewports) -->
         <section class="card full-width" aria-labelledby="goals-heading">
-            <h3 id="goals-heading">Top 3 Goals for This Term</h3>
+            <h2 id="goals-heading">Top 3 Goals for This Term</h2>
             <ol style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px;">
                 <li>Master HTML5 semantic elements and accessibility guidelines</li>
                 <li>Learn responsive layout design using modern CSS</li>
                 <li>Build and publish a portfolio website on GitHub Pages</li>
             </ol>
             <p>Check out my favorite website at 
-                <a href="https://www.wikipedia.org" target="_blank" rel="noopener" aria-label="Wikipedia (opens in a new tab)">Wikipedia</a> 
+                <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia (opens in a new tab)</a> 
                 for endless learning.
             </p>
         </section>
@@ -223,7 +225,7 @@
     <!-- Footer -->
     <footer id="contact">
         <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:alex@my.campus.edu" aria-label="Send email to alex@my.campus.edu">alex@my.campus.edu</a></p>
+        <p>Email: <a href="mailto:alex@my.campus.edu">alex@my.campus.edu</a></p>
         <p>&copy; 2026 Campuswire. Built with semantic HTML &amp; Responsive CSS.</p>
     </footer>
 
